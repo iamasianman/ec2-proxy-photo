@@ -15,7 +15,7 @@ app.get('/restaurants/:id/photos', (req, res) => {
 
 app.get('/api/restaurants/:id/photos', (req, res) => {
   const { id } = req.params;
-  axios.get(`http://localhost:3060/api/restaurants/${id}/photos`)
+  axios.get(`3.19.14.63:3060/api/restaurants/${id}/photos`)
     .then(response => {
       res.status(200).send(response.data);
     })
